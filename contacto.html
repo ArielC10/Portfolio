@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+  <link rel="icon" href="img/logo-a.ico">
+	<link rel="stylesheet" href="estilos/contacto.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html"><strong><p class="logo">Ariel</p></strong></a>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+
+    <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="Curriculum.html">Curriculum</a></li>
+        <li><a href="cv_artistico.html">CV Artistico</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function mostrarMensaje() {
+      alert('Informacion Enviada');
+    }
+  </script>
+
+  <div class="conteiner">
+    <form action="https://formsubmit.co/arielcarrasco441@gmail.com" method="POST" autocomplete="on">
+      <h2>Contacto</h2>
+      <br>
+      <div class="input-group">
+        <input type="text" name="name" placeholder="Nombre">
+  
+        <input type="tel" name="phone" placeholder="Telefono">
+  
+        <input type="email" name="email" placeholder="Email">
+  
+        <textarea name="message" cols="30" rows="5" placeholder="¿Para que me contactas?"></textarea>
+  
+        <input class="btn" type="submit" value="Enviar">
+
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+
+        <input type="hidden" name="_captcha" value="false">
+  
+      </div>
+    </form>
+  </div>
+</body>
+</html>
